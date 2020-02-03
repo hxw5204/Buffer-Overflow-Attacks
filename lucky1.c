@@ -13,8 +13,8 @@ int main(int argc, char *argv[]) {
     char buf[100];
     int offset1, offset2;
     printf("Enter offset1:");
-    fgets(buf, 100, stdin);
-    offset1 = atoi(buf);
+    fgets(buf, 100, stdin); //read 99 chars
+    offset1 = atoi(buf); // ascii to
     printf("Enter offset2:");
     fgets(buf, 100, stdin);
     offset2 = atoi(buf);
