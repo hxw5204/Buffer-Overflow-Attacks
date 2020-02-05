@@ -1,0 +1,75 @@
+lucky1
+
+offset1 128
+
+104 offset1 offset2 4
+(gdb) print ret
+$10 = (long *) 0x7fffffffdca8
+print *ret
+$11 = 6344087308990062336
+
+offset1 12 offset2 4
+(gdb) print ret
+$13 = (long *) 0x7fffffffdc4c
+(gdb) print *ret
+$14 = 27063868832382975
+(gdb) 
+
+
+ret 0x601070  0x000000000040072f
+
+(gdb) print offset1
+$1 = 80
+(gdb) print &offset1
+$2 = (int *) 0x7fffffffdc3c
+(gdb) print offset2
+$3 = 4
+(gdb) print &offset2
+$4 = (int *) 0x7fffffffdc38
+(gdb) print &ret
+$6 = (long **) 0x601070 <ret>
+(gdb) print &Password
+$17 = (char (*)[100]) 0x7fffffffdc40
+
+Enter your password:YYYYYYYY
+9	    return 'N';
+(gdb) print &0x7fffffffdc40
+Attempt to take address of value not located in memory.
+(gdb) print *0x7fffffffdc40
+$27 = 1499027801
+(gdb) Quit
+(gdb) print/x *0x7fffffffdc40
+$28 = 0x59595959
+(gdb) print/x *0x7fffffffdc41
+$29 = 0x59595959
+(gdb) print/x *0x7fffffffdc42
+$30 = 0x59595959
+(gdb) print/x *0x7fffffffdc43
+$31 = 0x59595959
+(gdb) print/x *0x7fffffffdc44
+$32 = 0x59595959
+(gdb) print/x *0x7fffffffdc45
+$33 = 0x595959
+(gdb) 
+
+23-59 24/
+
+lucky3
+
+(gdb) print &Password
+$1 = (char (*)[8]) 0x7fffffffdd78
+
+ print 0xed
+$11 = 237
+
+(gdb) print $rip
+$12 = (void (*)()) 0x4005b0 <goodPassword+25>
+(gdb) print &$rip
+Attempt to take address of value not located in memory.
+(gdb) print $rsp
+$13 = (void *) 0x7fffffffdd70
+(gdb) print $rax
+$14 = 140737488346488
+(gdb) print $rbp
+$15 = (void *) 0x7fffffffdd80
+
